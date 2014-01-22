@@ -1,0 +1,136 @@
+/*.georgia{font-family:Georgia;font-style:italic;font-weight:bold;}*/
+.discussions .alert{color:#B20000}
+.discussions .clear{clear:both;}
+.discussions .avatar_container{float:left;margin: 0 10px 3px 0;width:50px;height:50px;}
+.discussions ul.replies-thread{padding:0;margin: 10px 0 10px 0px;border-right: 1px solid #c4cde0;border-top: 1px solid #c4cde0;}
+.discussions ul.replies-thread li > div.sub-replies ul.replies-thread{margin:0 0 10px 20px;border-right:none;border-top: 1px solid #c4cde0}
+.discussions ul.replies-thread.moduloA{border-bottom: 2px solid #c4cde0;border-left: 1px solid #c4cde0;}
+.discussions ul.replies-thread.moduloB{border-bottom: 1px solid #c4cde0;border-left: 2px solid #c4cde0;}
+.discussions .reply-form{border-left:1px solid #ccc;border-bottom:1px solid #ccc;}
+.discussions ul.replies-thread li{display:block;}
+.discussions ul.replies-thread li.reply{padding:10px;}
+.discussions ul.replies-thread li.reply.moduloA{background:#EEE;}
+.discussions ul.replies-thread li.reply.moduloB{background:#e7ebf2;}
+.discussions ul.replies-thread li.reply .author-box{float:left;display:inline-block;padding-top:10px;}
+.discussions ul.replies-thread li.reply .author-box h3.author{font-size:13px;padding:0;margin:20px 0 0 10px;}
+.discussions ul.replies-thread li.reply .reply-body{clear:both;margin-top:10px;}
+.discussions .reply-actions{margin:0;padding:10px 10px 10px 60px;text-align:left;position:relative;margin-bottom:-1px;border-bottom: 1px solid #c4cde0;}
+.discussions .reply-actions span.icon{font-size: 40px;position: absolute;top: -8px;left:0px;padding:0 5px;color:#c4cde0;height:41px;}
+.discussions .d-actions.moduloA .reply-actions span.icon{background:#EEE;}
+.discussions .d-actions.moduloB .reply-actions span.icon{background:#e7ebf2;}
+.discussions .reply-actions a.secondary-action{}
+.discussions .reply-actions a.main-action{}
+.discussions .reply-actions .reactions-toggler span.off{display:inline;}
+.discussions .reply-actions .reactions-toggler span.on{display:none}
+.discussions .reply-actions .reactions-toggler.on span.off{display:none}
+.discussions .reply-actions .reactions-toggler.on span.on{display:inline;}
+.discussions ul.replies-thread li > .reply-form{margin:0 0 0 20px;}
+.discussions .reply-form{border:1px solid #e7ebf2;-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px;border-radius:0 0 4px 4px;}
+.discussions div.sub-replies ul.replies-thread.moduloA .reply-form{border-right:none;border-top: 1px solid #c4cde0;border-left: 2px solid #c4cde0;}
+.discussions div.sub-replies ul.replies-thread.moduloB .reply-form{border-right:none;border-top: 1px solid #c4cde0;border-left: 1px solid #c4cde0;}
+
+
+
+/* DiscussionHelper css */
+.d-title, .d-title a{/*color:#F7931E;*/font-size:22px;padding:0 0 5px;margin:0;font-family:Georgia;font-style:italic;font-weight:bold;word-wrap:break-word;}
+.d-info{font-size:11px;}
+.d-info-topic{}
+.d-info-author{/*color:#F7931E;*/font-family:Georgia;font-style:italic;font-weight:bold}
+.d-body{padding:20px 0 0;font-size:13px;line-height:1.5em;word-wrap:break-word;text-align:justify;}
+.d-date{font-size:11px;color:#c4cde0;}
+.d-author{}
+.d-reply-body{font-size:13px;line-height:1.5em;word-wrap:break-word;text-align:left;}
+
+/* Discussions form */
+.d-form{-moz-box-shadow: 0 4px 9px -5px #999; -webkit-box-shadow: 0 4px 9px -5px #999; box-shadow: 0 4px 9px -5px #999;z-index:10;}
+.d-form-question{border:1px solid #e7ebf2;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
+.d-form-question.collapsed .d-inputs .d-i-body, .d-form-question.collapsed .d-inputs .d-i-topic{display:none}
+.d-form h4{background:#f4f4f4;border-bottom:1px solid #e7ebf2;padding:5px 10px;font-size:16px;color:#ccc;font-weight:normal;}
+.d-form .d-inputs{position:relative;clear:both;}
+.d-form .d-inputs input.d-i-title{width:84%;margin: 10px 2% 5px;border:none;padding:10px 10% 10px 2%;font-size:16px;line-height:1.5em;height:17px;font-family:Georgia;font-style:italic;color:#F7931E;}
+.d-form .d-inputs .overTxtLabel{font-size:16px;padding:6px;}
+.d-form .d-inputs textarea.d-i-body{resize: none;width:96%;border:none;padding:5px 2% 5px;font-size:13px;line-height:1.7em;height:23px;font-family:Georgia;font-style:italic;}
+.d-form .d-inputs .d-i-title-counter{
+	display:none;
+	font-size:13px; color:#5f7cb5; font-weight:bold;
+	position:absolute;right:3%;top:16px;padding:3px 6px;
+	border:1px solid #ccc;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;
+	background: #F4F4F4;background-image: linear-gradient(top, #F5F6F6 0%, #E4E4E3 100%);background-image: -o-linear-gradient(top, #F5F6F6 0%, #E4E4E3 100%);background-image: -moz-linear-gradient(top, #F5F6F6 0%, #E4E4E3 100%);background-image: -webkit-linear-gradient(top, #F5F6F6 0%, #E4E4E3 100%);background-image: -ms-linear-gradient(top, #F5F6F6 0%, #E4E4E3 100%);background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F5F6F6), color-stop(1, #E4E4E3));
+	box-shadow: 0 1px 0 rgba(0, 0, 0, .1), inset 0 1px 0 #fff;
+}
+.d-form-question .d-inputs textarea.d-i-body{width:92%;margin: 10px 2%;border-top:1px solid #ddd;border-bottom:1px solid #ddd;}
+.d-form-question .d-inputs .d-i-topic{display:block;width:auto;width:96%;margin: 10px 2% 20px;}
+.d-form-question .d-inputs .d-i-topic .icon-caret-down{float:right;}
+.d-form .d-form-actions{background:#f4f4f4;border-top:1px solid #e7ebf2;padding:5px 10px;text-align:right;-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px;border-radius:0 0 4px 4px;}
+.d-form .d-form-actions .d-form-actions-options{display:inline-block;padding: 5px 10px;}
+.d-form .d-form-actions .d-form-actions-options label{padding: 0 5px 0 10px;color:#B2B2B2;}
+.d-form-question .d-inputs-admin{padding:10px 15px 0;line-height:2em;}
+.d-form-question .d-inputs-admin select{max-width:120px;}
+.d-btAction + .d-btAction{margin-left:10px;}
+
+/* Discussions targeting */
+.d-form .d-radio-group{position:relative; padding-bottom:5px;   display:block;float: left; width: 50%; height:10px; white-space: nowrap;}
+.d-form .d-radio-group.ter{width:33%;}
+.d-form .d-targeting { padding: 0 10px; }
+.d-form.collapsed .d-targeting { display: none; }
+.d-form .d-targeting nav.filter { display: inline-block; float: none; font-weight: normal; font-size: 11px; max-width:80%; margin:-6px 0 0; }
+.d-form .d-targeting input[type="radio"]{margin:0 5px 0 7px;float:left;}
+.d-form .d-targeting nav.filter .label {display:block; padding-right:20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.d-form .d-targeting nav.filter .icon-caret-down{position:absolute;top:5px;right:5px}
+.d-form .d-targeting label { 
+	width:auto;
+	max-width: calc(75% - 12px);
+	float:left;
+	display: inline-block;
+	padding: 0 6px;
+	margin-right:10px;
+	color: #39579b;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis; 
+}
+.d-form .d-targeting nav.filter:hover{
+	position:absolute;
+	left:24px;
+	z-index: 1;
+	max-width:none;
+	color: #39579b;
+}
+.d-form .d-targeting label:hover{
+	position:absolute;
+	left:24px;
+	background: #F4F4F4;
+	border: 1px solid #ddd;
+	z-index: 1;
+	padding: 3px 5px;
+	margin-top: -4px;
+	max-width:none;
+}
+
+/* Discussions list */
+.d-list{}
+.d-list li{padding:5px 0 10px;margin-bottom:5px;display:block;border-bottom:1px solid #e7ebf2;}
+.d-list .d-title, .d-list .d-title a{font-size:26px;line-height:28px;font-weight:normal;}
+.d-list .d-info-container{clear:both;}
+
+
+
+/* popup */
+.d-ajax-popup{display:none;}
+.d-ajax-popup-wrapper{width:100%; height:100%; position:fixed; top:0; bottom:0; background:#39579B; -moz-opacity:.60; filter:alpha(opacity=60);opacity:.6; z-index:998;}
+.d-ajax-popup-box-container{position: fixed; left: 50%;top:5%;z-index:999;}
+.d-ajax-popup-box-header{position: absolute;top: 10px;right: 10px;cursor:pointer;}
+.d-ajax-popup-box-content{}
+.d-ajax-popup-box{
+	position:relative; 
+	left:-50%;
+	top:-5%;
+	width:545px; min-height:80px; background:#ffffff; padding:30px 20px 20px; z-index:991; 
+	border:10px solid rgba(82, 82, 82);
+	border:10px solid rgba(82, 82, 82, .7);
+	-webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+	border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px;
+	max-height:555px;overflow:hidden;overflow-y:auto;
+}
+

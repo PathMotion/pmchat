@@ -1,0 +1,40 @@
+<VirtualHost *:80>
+        ServerName  pmchat.local
+        ServerAdmin root@pathmotion.com
+
+        ProxyPass /socket.io/ http://localhost:843/socket.io/
+        ProxyPassReverse /socket.io/ http://localhost:843/socket.io/
+
+        DocumentRoot /Users/nassim/Sites/pmchat/client
+        <Directory /Users/nassim/Sites/pmchat/client>
+                Options FollowSymLinks
+                RewriteEngine On
+                AllowOverride All
+        </Directory>
+
+        LogLevel warn
+        ErrorLog /Users/nassim/Sites/pmchat/apache/pmchat.error.log 
+</VirtualHost>
+
+
+<VirtualHost *:443>
+        ServerName  pmchat.local
+        ServerAdmin root@pathmotion.com
+
+        ProxyPass /socket.io/ http://localhost:843/socket.io/
+        ProxyPassReverse /socket.io/ http://localhost:843/socket.io/
+
+        DocumentRoot /Users/nassim/Sites/pmchat/client
+        <Directory /Users/nassim/Sites/pmchat/client>
+                Options FollowSymLinks
+                RewriteEngine On
+                AllowOverride All
+        </Directory>
+        
+        SSLEngine on
+        SSLCertificateFile /opt/local/apache2/conf/ssl/trustonme.crt
+        SSLCertificateKeyFile /opt/local/apache2/conf/ssl/trustonme.key
+
+        LogLevel warn
+	ErrorLog /Users/nassim/Sites/pmchat/apache/pmchat.error.log 
+</VirtualHost>

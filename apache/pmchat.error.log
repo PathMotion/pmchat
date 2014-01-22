@@ -1,0 +1,230 @@
+[Wed Nov 20 11:19:46 2013] [error] [client 127.0.0.1] (54)Connection reset by peer: proxy: error reading status line from remote server localhost:843, referer: http://pmchat.local/index.php?hello
+[Wed Nov 20 11:19:46 2013] [error] [client 127.0.0.1] proxy: Error reading from remote server returned by /socket.io/1/xhr-polling/qkR_AHIS5toidzKns77l, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:04:26 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): [2002] No such file or directory (trying to connect via unix:///tmp/mysql.sock) in /Users/nassim/Sites/pmchat/client/_db.inc on line 16, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:04:26 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:04:26 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:04:26 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:04:26 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:04:26 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /Users/nassim/Sites/pmchat/client/_db.inc on line 16, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:04:26 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:04:26 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:04:26 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:04:26 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:04:38 2013] [error] [client 127.0.0.1] File does not exist: /Users/nassim/Sites/pmchat/client/favicon.ico, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:06:18 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): [2002] No such file or directory (trying to connect via unix:///tmp/mysql.sock) in /Users/nassim/Sites/pmchat/client/_db.inc on line 16, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:06:18 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:06:18 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:06:18 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:06:18 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:06:18 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /Users/nassim/Sites/pmchat/client/_db.inc on line 16, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:06:18 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:06:18 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:06:18 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:06:18 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:06:18 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): [2002] No such file or directory (trying to connect via unix:///tmp/mysql.sock) in /Users/nassim/Sites/pmchat/client/_db.inc on line 16, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:06:18 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:06:18 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:06:18 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:06:18 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:06:18 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /Users/nassim/Sites/pmchat/client/_db.inc on line 16, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:06:18 2013] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:06:18 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:06:18 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4, referer: http://pmchat.local/index.php?hello
+[Fri Dec 06 20:06:18 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16, referer: http://pmchat.local/index.php?hello
+[Wed Dec 18 13:40:21 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): [2002] No such file or directory (trying to connect via unix:///tmp/mysql.sock) in /Users/nassim/Sites/pmchat/client/_db.inc on line 16
+[Wed Dec 18 13:40:21 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Wed Dec 18 13:40:21 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Wed Dec 18 13:40:21 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Wed Dec 18 13:40:21 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16
+[Wed Dec 18 13:40:21 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /Users/nassim/Sites/pmchat/client/_db.inc on line 16
+[Wed Dec 18 13:40:21 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Wed Dec 18 13:40:21 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Wed Dec 18 13:40:21 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Wed Dec 18 13:40:21 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16
+[Mon Dec 23 12:20:28 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): [2002] No such file or directory (trying to connect via unix:///tmp/mysql.sock) in /Users/nassim/Sites/pmchat/client/_db.inc on line 16
+[Mon Dec 23 12:20:28 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Dec 23 12:20:28 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Mon Dec 23 12:20:28 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Mon Dec 23 12:20:28 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16
+[Mon Dec 23 12:20:28 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /Users/nassim/Sites/pmchat/client/_db.inc on line 16
+[Mon Dec 23 12:20:28 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Dec 23 12:20:28 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Mon Dec 23 12:20:28 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Mon Dec 23 12:20:28 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16
+[Mon Dec 23 12:20:29 2013] [error] [client 127.0.0.1] File does not exist: /Users/nassim/Sites/pmchat/client/favicon.ico
+[Mon Dec 23 12:22:00 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): [2002] No such file or directory (trying to connect via unix:///tmp/mysql.sock) in /Users/nassim/Sites/pmchat/client/_db.inc on line 16
+[Mon Dec 23 12:22:00 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Dec 23 12:22:00 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Mon Dec 23 12:22:00 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Mon Dec 23 12:22:00 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16
+[Mon Dec 23 12:22:00 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /Users/nassim/Sites/pmchat/client/_db.inc on line 16
+[Mon Dec 23 12:22:00 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Dec 23 12:22:00 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Mon Dec 23 12:22:00 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Mon Dec 23 12:22:00 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16
+[Mon Dec 23 12:27:55 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): [2002] No such file or directory (trying to connect via unix:///tmp/mysql.sock) in /Users/nassim/Sites/pmchat/client/_db.inc on line 16
+[Mon Dec 23 12:27:55 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Dec 23 12:27:55 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Mon Dec 23 12:27:55 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Mon Dec 23 12:27:55 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16
+[Mon Dec 23 12:27:55 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /Users/nassim/Sites/pmchat/client/_db.inc on line 16
+[Mon Dec 23 12:27:55 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Dec 23 12:27:55 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Mon Dec 23 12:27:55 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Mon Dec 23 12:27:55 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16
+[Mon Dec 23 12:27:55 2013] [error] [client 127.0.0.1] File does not exist: /Users/nassim/Sites/pmchat/client/favicon.ico
+[Mon Dec 23 12:27:56 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): [2002] No such file or directory (trying to connect via unix:///tmp/mysql.sock) in /Users/nassim/Sites/pmchat/client/_db.inc on line 16
+[Mon Dec 23 12:27:56 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Dec 23 12:27:56 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Mon Dec 23 12:27:56 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Mon Dec 23 12:27:56 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16
+[Mon Dec 23 12:27:56 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /Users/nassim/Sites/pmchat/client/_db.inc on line 16
+[Mon Dec 23 12:27:56 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Dec 23 12:27:56 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Mon Dec 23 12:27:56 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Mon Dec 23 12:27:56 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16
+[Mon Dec 23 12:30:49 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): [2002] No such file or directory (trying to connect via unix:///tmp/mysql.sock) in /Users/nassim/Sites/pmchat/client/_db.inc on line 16
+[Mon Dec 23 12:30:49 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Dec 23 12:30:49 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Mon Dec 23 12:30:49 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Mon Dec 23 12:30:49 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16
+[Mon Dec 23 12:30:49 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /Users/nassim/Sites/pmchat/client/_db.inc on line 16
+[Mon Dec 23 12:30:49 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Dec 23 12:30:49 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Mon Dec 23 12:30:49 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Mon Dec 23 12:30:49 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] File does not exist: /Users/nassim/Sites/pmchat/client/favicon.ico
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): [2002] No such file or directory (trying to connect via unix:///tmp/mysql.sock) in /Users/nassim/Sites/pmchat/client/_db.inc on line 16
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /Users/nassim/Sites/pmchat/client/_db.inc on line 16
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] File does not exist: /Users/nassim/Sites/pmchat/client/favicon.ico
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): [2002] No such file or directory (trying to connect via unix:///tmp/mysql.sock) in /Users/nassim/Sites/pmchat/client/_db.inc on line 16
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /Users/nassim/Sites/pmchat/client/_db.inc on line 16
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): [2002] No such file or directory (trying to connect via unix:///tmp/mysql.sock) in /Users/nassim/Sites/pmchat/client/_db.inc on line 16
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /Users/nassim/Sites/pmchat/client/_db.inc on line 16
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Mon Dec 23 12:30:50 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16
+[Mon Dec 23 12:30:51 2013] [error] [client 127.0.0.1] File does not exist: /Users/nassim/Sites/pmchat/client/favicon.ico
+[Mon Dec 23 12:30:51 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): [2002] No such file or directory (trying to connect via unix:///tmp/mysql.sock) in /Users/nassim/Sites/pmchat/client/_db.inc on line 16
+[Mon Dec 23 12:30:51 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Dec 23 12:30:51 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Mon Dec 23 12:30:51 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Mon Dec 23 12:30:51 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16
+[Mon Dec 23 12:30:51 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /Users/nassim/Sites/pmchat/client/_db.inc on line 16
+[Mon Dec 23 12:30:51 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Dec 23 12:30:51 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Mon Dec 23 12:30:51 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Mon Dec 23 12:30:51 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:16
+[Mon Dec 23 12:46:53 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli_connect(): [2002] No such file or directory (trying to connect via unix:///tmp/mysql.sock) in /Users/nassim/Sites/pmchat/client/_db.inc on line 10
+[Mon Dec 23 12:46:53 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Dec 23 12:46:53 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Mon Dec 23 12:46:53 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Mon Dec 23 12:46:53 2013] [error] [client 127.0.0.1] PHP   3. mysqli_connect() /Users/nassim/Sites/pmchat/client/_db.inc:10
+[Mon Dec 23 12:46:53 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli_connect(): (HY000/2002): No such file or directory in /Users/nassim/Sites/pmchat/client/_db.inc on line 10
+[Mon Dec 23 12:46:53 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Dec 23 12:46:53 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Mon Dec 23 12:46:53 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Mon Dec 23 12:46:53 2013] [error] [client 127.0.0.1] PHP   3. mysqli_connect() /Users/nassim/Sites/pmchat/client/_db.inc:10
+[Mon Dec 23 15:09:53 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): [2002] No such file or directory (trying to connect via unix:///tmp/mysql.sock) in /Users/nassim/Sites/pmchat/client/_db.inc on line 9
+[Mon Dec 23 15:09:53 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Dec 23 15:09:53 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Mon Dec 23 15:09:53 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Mon Dec 23 15:09:53 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:9
+[Mon Dec 23 15:09:53 2013] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /Users/nassim/Sites/pmchat/client/_db.inc on line 9
+[Mon Dec 23 15:09:53 2013] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Dec 23 15:09:53 2013] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Mon Dec 23 15:09:53 2013] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Mon Dec 23 15:09:53 2013] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:9
+[Tue Jan 14 10:49:58 2014] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): [2002] No such file or directory (trying to connect via unix:///tmp/mysql.sock) in /Users/nassim/Sites/pmchat/client/_db.inc on line 9
+[Tue Jan 14 10:49:58 2014] [error] [client 127.0.0.1] PHP Stack trace:
+[Tue Jan 14 10:49:58 2014] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Tue Jan 14 10:49:58 2014] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Tue Jan 14 10:49:58 2014] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:9
+[Tue Jan 14 10:49:58 2014] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /Users/nassim/Sites/pmchat/client/_db.inc on line 9
+[Tue Jan 14 10:49:58 2014] [error] [client 127.0.0.1] PHP Stack trace:
+[Tue Jan 14 10:49:58 2014] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Tue Jan 14 10:49:58 2014] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Tue Jan 14 10:49:58 2014] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:9
+[Tue Jan 14 10:49:58 2014] [error] [client 127.0.0.1] File does not exist: /Users/nassim/Sites/pmchat/client/favicon.ico
+[Wed Jan 22 16:05:56 2014] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): [2002] No such file or directory (trying to connect via unix:///tmp/mysql.sock) in /Users/nassim/Sites/pmchat/client/_db.inc on line 9
+[Wed Jan 22 16:05:56 2014] [error] [client 127.0.0.1] PHP Stack trace:
+[Wed Jan 22 16:05:56 2014] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Wed Jan 22 16:05:56 2014] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Wed Jan 22 16:05:56 2014] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:9
+[Wed Jan 22 16:05:56 2014] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /Users/nassim/Sites/pmchat/client/_db.inc on line 9
+[Wed Jan 22 16:05:56 2014] [error] [client 127.0.0.1] PHP Stack trace:
+[Wed Jan 22 16:05:56 2014] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Wed Jan 22 16:05:56 2014] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Wed Jan 22 16:05:56 2014] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:9
+[Wed Jan 22 16:05:57 2014] [error] [client 127.0.0.1] File does not exist: /Users/nassim/Sites/pmchat/client/favicon.ico
+[Wed Jan 22 16:07:02 2014] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): [2002] No such file or directory (trying to connect via unix:///tmp/mysql.sock) in /Users/nassim/Sites/pmchat/client/_db.inc on line 9
+[Wed Jan 22 16:07:02 2014] [error] [client 127.0.0.1] PHP Stack trace:
+[Wed Jan 22 16:07:02 2014] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Wed Jan 22 16:07:02 2014] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Wed Jan 22 16:07:02 2014] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:9
+[Wed Jan 22 16:07:02 2014] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /Users/nassim/Sites/pmchat/client/_db.inc on line 9
+[Wed Jan 22 16:07:02 2014] [error] [client 127.0.0.1] PHP Stack trace:
+[Wed Jan 22 16:07:02 2014] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Wed Jan 22 16:07:02 2014] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Wed Jan 22 16:07:02 2014] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:9
+[Wed Jan 22 16:07:13 2014] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): [2002] No such file or directory (trying to connect via unix:///tmp/mysql.sock) in /Users/nassim/Sites/pmchat/client/_db.inc on line 9
+[Wed Jan 22 16:07:13 2014] [error] [client 127.0.0.1] PHP Stack trace:
+[Wed Jan 22 16:07:13 2014] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Wed Jan 22 16:07:13 2014] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Wed Jan 22 16:07:13 2014] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:9
+[Wed Jan 22 16:07:13 2014] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /Users/nassim/Sites/pmchat/client/_db.inc on line 9
+[Wed Jan 22 16:07:13 2014] [error] [client 127.0.0.1] PHP Stack trace:
+[Wed Jan 22 16:07:13 2014] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Wed Jan 22 16:07:13 2014] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Wed Jan 22 16:07:13 2014] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:9
+[Wed Jan 22 16:08:14 2014] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): [2002] No such file or directory (trying to connect via unix:///tmp/mysql.sock) in /Users/nassim/Sites/pmchat/client/_db.inc on line 9
+[Wed Jan 22 16:08:14 2014] [error] [client 127.0.0.1] PHP Stack trace:
+[Wed Jan 22 16:08:14 2014] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Wed Jan 22 16:08:14 2014] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Wed Jan 22 16:08:14 2014] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:9
+[Wed Jan 22 16:08:14 2014] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /Users/nassim/Sites/pmchat/client/_db.inc on line 9
+[Wed Jan 22 16:08:14 2014] [error] [client 127.0.0.1] PHP Stack trace:
+[Wed Jan 22 16:08:14 2014] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Wed Jan 22 16:08:14 2014] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Wed Jan 22 16:08:14 2014] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:9
+[Wed Jan 22 16:08:15 2014] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): [2002] No such file or directory (trying to connect via unix:///tmp/mysql.sock) in /Users/nassim/Sites/pmchat/client/_db.inc on line 9
+[Wed Jan 22 16:08:15 2014] [error] [client 127.0.0.1] PHP Stack trace:
+[Wed Jan 22 16:08:15 2014] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Wed Jan 22 16:08:15 2014] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Wed Jan 22 16:08:15 2014] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:9
+[Wed Jan 22 16:08:15 2014] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /Users/nassim/Sites/pmchat/client/_db.inc on line 9
+[Wed Jan 22 16:08:15 2014] [error] [client 127.0.0.1] PHP Stack trace:
+[Wed Jan 22 16:08:15 2014] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Wed Jan 22 16:08:15 2014] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Wed Jan 22 16:08:15 2014] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:9
+[Wed Jan 22 16:19:16 2014] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): [2002] No such file or directory (trying to connect via unix:///tmp/mysql.sock) in /Users/nassim/Sites/pmchat/client/_db.inc on line 9
+[Wed Jan 22 16:19:16 2014] [error] [client 127.0.0.1] PHP Stack trace:
+[Wed Jan 22 16:19:16 2014] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Wed Jan 22 16:19:16 2014] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Wed Jan 22 16:19:16 2014] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:9
+[Wed Jan 22 16:19:16 2014] [error] [client 127.0.0.1] PHP Warning:  mysqli::mysqli(): (HY000/2002): No such file or directory in /Users/nassim/Sites/pmchat/client/_db.inc on line 9
+[Wed Jan 22 16:19:16 2014] [error] [client 127.0.0.1] PHP Stack trace:
+[Wed Jan 22 16:19:16 2014] [error] [client 127.0.0.1] PHP   1. {main}() /Users/nassim/Sites/pmchat/client/index.php:0
+[Wed Jan 22 16:19:16 2014] [error] [client 127.0.0.1] PHP   2. init_db() /Users/nassim/Sites/pmchat/client/index.php:4
+[Wed Jan 22 16:19:16 2014] [error] [client 127.0.0.1] PHP   3. mysqli->mysqli() /Users/nassim/Sites/pmchat/client/_db.inc:9

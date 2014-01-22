@@ -1,0 +1,14 @@
+{
+	"name":"pathmotion-chat",
+	"private":"true",
+	"dependencies":{
+		"socket.io":"0.9.16",
+		"express":"3.2.6",
+		"mysql":"2.0.0-alpha9",
+		"moment":"2.2.1",
+		"cheerio":"0.12.2",
+		"i18n-abide":"0.0.13",
+		"connect":"2.11.0",
+		"cookie": "0.1.0"
+	}
+}

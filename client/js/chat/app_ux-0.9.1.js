@@ -1,4 +1,4 @@
-// © 2013 - PathMotion - Career Inspiration Chat - v0.9
+// © 2013 - PathMotion - Career Inspiration Chat - v0.8
 // app_ux.js - Manage the interactions with the node.js server
  
 var socket = null;
@@ -33,15 +33,14 @@ $(document).addEvent('domready', function() {
 	var IOconnectTimeout = null;
 	var ioscript = [
 		{
-			/* via ProxyReverse compatible with Firewall or Company proxy */
-			'server': '//'+window.location.hostname+'/socket.io/',
-			'lib': '//'+window.location.hostname+'/socket.io/socket.io.js' 
-		},
-
-		{
 			/* direct */
 			'server': 'http://'+window.location.hostname+':843/',
 			'lib': 'http://'+window.location.hostname+':843/socket.io/socket.io.js'
+		},
+		{
+			/* via ProxyReverse compatible with Firewall or Company proxy */
+			'server': '//'+window.location.hostname+'/',
+			'lib': '//'+window.location.hostname+'/socket.io/socket.io.js' 
 		}
 	];
 	var ioscript_used;
@@ -64,21 +63,25 @@ $(document).addEvent('domready', function() {
 	// functions
 	
 	function appendScript(pathToScript) {
+	    //console.log('appendScript: '+pathToScript);
 	    var head = document.getElementsByTagName("head")[0];
 	    var js = document.createElement("script");
 	    js.type = "text/javascript";
 	    js.src = pathToScript;
 		js.id = 'iojsloader';
+	    try{
 	    head.appendChild(js);
+	    } catch(e){ }
 	}
 	
 	function initIO( ioscript_previously_tested, firstAttempt ){
+	    try{
 		setTimeout(function(){
 			if (typeof io != 'undefined'){
 				ioscript_used = ioscript_previously_tested;
 				ConnectingMsgHandler.set('html', __t('Connecting…'));
 				setTimeout(function(){
-						socket = io.connect(ioscript[0]['server'], {
+					socket = io.connect(ioscript[ ioscript_previously_tested ]['server'], {
 							// 'connect timeout': 30000,
 							'sync disconnect on unload': true
 						});
@@ -90,9 +93,10 @@ $(document).addEvent('domready', function() {
 				ConnectingMsgHandler.set('html', __t('Waiting for the server to be ready…'));
 				$('iojsloader').destroy();
 				appendScript( ioscript[ (firstAttempt || ioscript_previously_tested ? 0 : 1) ]['lib'] );
-				setTimeout(function(){ initIO( (ioscript_previously_tested ? 0 : 1), false ); }, 5000);
+				setTimeout(function(){ initIO( (firstAttempt || ioscript_previously_tested ? 0 : 1), false ); }, 5000);
 			}	
 		}, 5000);
+	    }catch(e){}
 	}
 	
 	function close_chat(){
@@ -681,9 +685,9 @@ $(document).addEvent('domready', function() {
 		
 		// socket has been closed
 		// setTimeout(function(){
-			socket.on('disconnect', function () {
-				return close_chat();
-			})
+		//	socket.on('disconnect', function () {
+		//		return close_chat();
+		//	})
 		// }, 2000);
 
 		socket.on('connect_failed', function () { restart(); }) 

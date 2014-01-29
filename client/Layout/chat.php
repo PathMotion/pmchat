@@ -170,7 +170,7 @@
 <script type="text/javascript" src="/js/libs/discussions.js?1381949847"></script>
 <script type="text/javascript" src="/js/libs/moment.min.js?1381949847"></script>
 <script type="text/javascript" src="/js/libs/moment-lang/fr.js?1381949847"></script>
-<script type="text/javascript" src="/js/chat/app_ux-0.9.js?1381949847"></script>
+<script type="text/javascript" src="/js/chat/app_ux-0.9.1.js?1381949847"></script>
 <?php if ($luser['type'] == 'insider'): ?>
 <script type="text/javascript" src="/js/chat/app_admin_ux.js?1381949847"></script>
 <?php endif; ?>

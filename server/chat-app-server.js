@@ -1,5 +1,5 @@
 /**
-** PM CHAT for Career Inspiration app - v0.9
+** PM CHAT for Career Inspiration app - v0.10
 ** nassim@pathmotion.com - 2013-2014
 **
 ** TODOs
@@ -63,8 +63,8 @@ function _log(str, sessionID){
 	if (typeof users[ sessionID ] != "undefined" && typeof users[ sessionID ].chatDiscussionId != "undefined")
 		connected_user_nb = Object.keys(users_ids[ users[ sessionID ].chatDiscussionId ]).length;
 	console.log(moment().format('YYYY-M-D H:mm:ss') 
-		//+(users[ sessionID ] && users[ sessionID ].socket ? "\tsocket#" + users[ sessionID ].socket.id : '') 
-		//+ (typeof sessionID != "undefined" ? "\tsession#" + sessionID : '')
+		+(users[ sessionID ] && users[ sessionID ].socket ? "\tsocket#" + users[ sessionID ].socket.id : '') 
+		+ (typeof sessionID != "undefined" ? "\tsession#" + sessionID : '')
 		+ "\t"+(users[ sessionID ] && users[ sessionID ].kinfOfAccess != "undefined" ? users[ sessionID ].kinfOfAccess : 'unknown_io')
 		+(users[ sessionID ] && users[ sessionID ].chatId ? "-chat#" + users[ sessionID ].chatId : '') 
 		+"-nb_user("+connected_user_nb+")"
@@ -179,7 +179,7 @@ function removeItemsFromCache(deleted_items, sessionID){
 
 				// and then update the root discussion thread count
 				for (var i=0; discussionsList[ users[ sessionID ].chatDiscussionId ][i]; i++)
-				discussionsList[ users[ sessionID ].chatDiscussionId ].forEach(function(item_cached, index, theArray){
+					discussionsList[ users[ sessionID ].chatDiscussionId ].forEach(function(item_cached, index, theArray){
 					if (item_cached['id'] == item['parent_discussion_reply_id']){
 						discussionsList[ users[ sessionID ].chatDiscussionId ][index]['thread_count'] -= 1;
 					}
@@ -217,26 +217,11 @@ if (server_start){
 	);
 }	
 
-io.set('authorization', function (handshakeData, accept) {
-	if (handshakeData.headers.cookie) {
-    	handshakeData.cookie = cookie.parse(handshakeData.headers.cookie);
-		if (handshakeData.cookie[ config.cookieName ]){
-		  	accept(null, true);
-		} else{
-			console.log('Bad cookie transmitted!')
-			return accept('Bad cookie transmitted.', false);
-		}
-	} else {
-		console.log('No cookie transmitted!')
-		return accept('No cookie transmitted.', false);
-	} 
-});
-
 io.sockets.on('connection', function(socket){	
 
 	// a user here will be identified as uniq throw their session identifier
 	var sessionID = getPmCookie( socket.handshake );
-	//_log('New connection identified with the session', sessionID);
+	_log('New connection identified with the session', sessionID);
 
 	// check if previous data linked to this sessionID
 	if (users[ sessionID ] && users[ sessionID ].chatId &&  users[ sessionID ].chatDiscussionId){
@@ -263,6 +248,8 @@ io.sockets.on('connection', function(socket){
 				var connected_user_nb = Object.keys(users_ids[ users[ sessionID ].chatDiscussionId ]).length;
 				io.sockets.emit('total online users', signEmitData( connected_user_nb ));
 				//_log('Number of users currently connected to the chat: '+connected_user_nb);	
+
+				check_online_insiders();
 			}
 	}
 	/*
@@ -325,9 +312,26 @@ io.sockets.on('connection', function(socket){
 		if (users[ sessionID ].chatId && users[ sessionID ].chatDiscussionId){
 			checkChatDiscussion( users[ sessionID ].chatId, users[ sessionID ].chatDiscussionId );
 		}
+		check_online_insiders();
 		return true;
 	}
 
+	function check_online_insiders(){
+		// updating insiders list if this user was an insider
+		if (typeof users[ sessionID ].insider_html_identity != "undefined" 
+			&& myCheerioDom && !myCheerioDom('#'+users[ sessionID ].user_id).html())
+		{
+			_log('Updating online insiders (+1 - reconnect)...');
+			myCheerioDom('ul').append( users[ sessionID ].insider_html_identity );
+			myCheerioDom('span.counter').html( parseInt( myCheerioDom('span.counter').html() )+1 );
+			io.sockets.emit('insiders-online-update', signEmitData( myCheerioDom.html() ));		
+			// log the connection datetime
+			connection.query('UPDATE fbpages_discussions_chats_users '
+				+' SET disconnect_date = NULL '
+				+' WHERE discussion_chat_id = ? AND user_id =  ?', 
+				[users[ sessionID ].chatId, users[ sessionID ].user_id], function(err, info) {});
+		}
+	}
 
 	// ********** // ********** // ********** // ********** //
 	// ************ GENERAL REQUESTS AVAILABLE ************ //
@@ -459,7 +463,7 @@ io.sockets.on('connection', function(socket){
 
 				if (!is_numeric(thread_id) || thread_id == 0){
 					// new discussion (= first level post)
-					discussionsList[ users[ sessionID ].chatDiscussionId ].push(tmp);
+					discussionsList[ users[ sessionID ].chatDiscussionId ].splice(0,0,tmp);
 					io.sockets.emit('new discussion received', signEmitData(tmp));
 					// increment the discussions posted counter
 					connection.query('UPDATE fbpages_discussions_chats_users '
@@ -559,7 +563,7 @@ io.sockets.on('connection', function(socket){
 	
 	// Update insiders list
 	socket.on('insiders-online', function(data){
-		_log('Updating online insiders...');
+		_log('Updating online insiders (+1)...');
 		myCheerioDom = cheerio.load(data);
 		io.sockets.emit('insiders-online-update', signEmitData( myCheerioDom.html() ));
 	});
@@ -578,10 +582,11 @@ io.sockets.on('connection', function(socket){
 		if (users[ sessionID ].user_role == 'insider'){
 			// insidersOnline.removeChild(insidersOnline.getElementById(users[ sessionID ].user_id));
 			if (myCheerioDom && myCheerioDom('#'+users[ sessionID ].user_id)) {
+				users[ sessionID ].insider_html_identity = myCheerioDom('#'+users[ sessionID ].user_id);
 				myCheerioDom('#'+users[ sessionID ].user_id).remove();
 				myCheerioDom('span.counter').html( parseInt( myCheerioDom('span.counter').html() )-1 );
 
-				/* temp : disable to avoid insiders becoming disconnecting again and again on the chat UI */
+				_log('Updating online insiders (-1)...');
 				io.sockets.emit('insiders-online-update', signEmitData( myCheerioDom.html() ));
 			}
 		}
